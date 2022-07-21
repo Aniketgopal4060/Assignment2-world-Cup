@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+body {
+    width: 100%;
+    font-family: 'Bitter', serif;
+}
+
+.container {
+    margin: 50px;
+}
+
+.show-details {
+    display: flex;
+    background-color: black;
+
+    border-radius: 30px;
+
+}
+
+.title-author {
+    margin: 50px;
+}
+
+.show-title {
+
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+
+}
+
+.show-author {
+
+
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.show-banner img {
+    padding-left: 200px;
+    height: 650px;
+
+}
+
+.watch-link {
+    margin-top: 40px;
+
+    display: flex;
+
+    align-items: center;
+    width: 187px;
+    height: 56px;
+    background: #DD0000;
+    border-radius: 5px;
+
+}
+
+.watch-link .link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 10px;
+    transition: all .25s;
+}
+
+.watch-link .link:hover {
+    color: rgb(19, 238, 238);
+}
+
+.icon {
+
+    font-size: 1.5em;
+    color: white;
+}
+
+/* 2nd part start  */
+aside {
+    background-color: black;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.item-link {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 20px;
+
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    list-style: none;
+
+}
+
+.upcoming {
+    text-decoration: none;
+    color: black;
+}
+
+.item-link1 {
+    background-color: #DD0000;
+    color: black;
+}
+
+
+
+.container2 {
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+}
+
+.blog2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    row-gap: 20px;
+
+
+}
+
+.blog-item {
+    border: 2px solid whitesmoke;
+}
+
+.blog-banner {
+    width: 312px;
+    height: 175px;
+
+}
+
+.transfar {
+    padding-left: 10px;
+}
+
+.blog-details {
+    font-weight: 600;
+    padding-left: 10px;
+
+
+}
+
+.all-icon {
+    display: flex;
+    gap: 40px;
+    padding-left: 15px;
+
+
+
+}
+
+/* Footer  */
+.inner-footer {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.inner-footer h3 {
+
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 10px;
+    margin-bottom: -20px;
+
+}
+
+input {
+    margin-top: -90px;
+    font-weight: 700;
+    font-size: 113px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid rgb(56, 48, 48);
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links ul {
+    padding: 10px;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    margin: auto;
+
+}
+
+.social-items {
+    list-style: none;
+}
+
+.social-items a {
+    padding: 10px 20px;
+    font-size: 35px;
+    color: #6cccc6;
+    transition: all .25s;
+}
+
+.social-items a:hover {
+    color: #5e9a96;
+}
+
+.contact-and-service {
+    display: flex;
+    width: 900px;
+    height: 70px;
+    margin: auto;
+}
+
+.contact-and-service ul {
+    display: flex;
+
+}
+
+.services {
+    list-style: none;
+}
+
+.services a {
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: white;
+    transition: all .25s;
+}
+
+.services a:hover {
+    color: #6cccc6;
+}
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+
+    .container {
+
+        margin: 0;
+        width: 100%;
+
+    }
+
+    .banner-vs-banner {
+        width: 100%;
+
+    }
+
+    .show-title {
+        text-align: center;
+        color: white;
+
+        font-size: 50px;
+
+    }
+
+    .show-banner img {
+        padding-left: 0px;
+        height: 350px;
+
+    }
+
+    .show-details {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .container2 {
+        flex-direction: column;
+    }
+
+
+
+
+    .blog2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .inner-footer {
+        height: 400px;
+    }
+
+
+
+    .contact-and-service ul {
+        flex-direction: column;
+
+    }
+
+    .services {
+        width: 100%;
+        margin: 10px;
+
+    }
+}
+
+/* tab view  */
+@media only screen and (min-width:689px) and (max-width:992px) {}

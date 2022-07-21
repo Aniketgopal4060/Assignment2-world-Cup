@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- icon kit here -->
+    <script src="https://kit.fontawesome.com/8ff5ddeb2b.js" crossorigin="anonymous"></script>
+    <!-- style here  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+        body {
+            width: 100%;
+            font-family: 'Bitter', serif;
+        }
+
+        .container {
+            margin: 50px;
+        }
+
+        .show-details {
+            display: flex;
+            background-color: black;
+
+            border-radius: 30px;
+
+        }
+
+        .title-author {
+            margin: 50px;
+        }
+
+        .show-title {
+
+            color: white;
+            font-weight: 700;
+            font-size: 70px;
+
+        }
+
+        .show-author {
+
+
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .show-banner img {
+            padding-left: 200px;
+            height: 650px;
+
+        }
+
+        .watch-link {
+            margin-top: 40px;
+
+            display: flex;
+
+            align-items: center;
+            width: 187px;
+            height: 56px;
+            background: #DD0000;
+            border-radius: 5px;
+
+        }
+
+        .watch-link .link {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            padding: 10px;
+            transition: all .25s;
+        }
+
+        .watch-link .link:hover {
+            color: rgb(19, 238, 238);
+        }
+
+        .icon {
+
+            font-size: 1.5em;
+            color: white;
+        }
+
+        /* 2nd part start  */
+        aside {
+            background-color: black;
+            width: 312px;
+            height: 312px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .item-link {
+            background-color: white;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            padding-top: 20px;
+            color: black;
+            border: 1px solid white;
+            border-radius: 10px;
+            width: 200px;
+            height: 50px;
+            list-style: none;
+
+        }
+
+        .item-link1 {
+            background-color: #DD0000;
+            color: black;
+        }
+
+        /* 2nd part  */
+        .container2 {
+            display: flex;
+            margin: 30px;
+            gap: 36px;
+        }
+
+        .banner-vs-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+
+        .banners-pic {
+            margin-top: 20px;
+            width: 312px;
+            height: 242px;
+            border: 2px solid rgb(215, 205, 205);
+            border-radius: 5px;
+
+
+        }
+
+        .banners {
+            display: flex;
+            justify-content: space-evenly;
+
+            padding: 35px;
+
+
+        }
+
+        .banner-image1 {
+            width: 93.04px;
+            height: 56.18px;
+            margin-left: -8px;
+            margin-right: 15px;
+        }
+
+        .banner-image2 {
+            width: 93.04px;
+            height: 56.18px;
+            margin-left: 15px;
+
+
+        }
+
+        .heading-text {
+            margin-top: -40px;
+            padding-left: 60px;
+        }
+
+        /* Footer  */
+        .inner-footer {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        .inner-footer h3 {
+
+            color: white;
+            text-align: center;
+            font-weight: 400;
+            font-size: 1.8rem;
+            padding: 10px;
+            margin-bottom: -20px;
+
+        }
+
+        input {
+            margin-top: -90px;
+            font-weight: 700;
+            font-size: 113px;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            border-bottom: 1px solid rgb(56, 48, 48);
+        }
+
+        .social-links {
+            display: flex;
+        }
+
+        .social-links ul {
+            padding: 10px;
+            display: flex;
+            width: 300px;
+            height: 30px;
+            margin: auto;
+
+        }
+
+        .social-items {
+            list-style: none;
+        }
+
+        .social-items a {
+            padding: 10px 20px;
+            font-size: 35px;
+            color: #6cccc6;
+            transition: all .25s;
+        }
+
+        .social-items a:hover {
+            color: #5e9a96;
+        }
+
+        .contact-and-service {
+            display: flex;
+            width: 900px;
+            height: 70px;
+            margin: auto;
+        }
+
+        .contact-and-service ul {
+            display: flex;
+
+        }
+
+        .services {
+            list-style: none;
+        }
+
+        .services a {
+            text-decoration: none;
+            padding: 0px 15px;
+            font-size: 18px;
+            color: white;
+            transition: all .25s;
+        }
+
+        .services a:hover {
+            color: #6cccc6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <section class="container">
+            <div class="show-details">
+                <div class="title-author">
+                    <h1 class="show-title">
+                        The Greatest <br> show on the <br> earth
+
+                    </h1>
+                    <p class="show-author">
+                        This page shares my best articles to read on topics like health, <br> happiness, creativity,
+                        productivity and more. The central <br> question that drives my work is,
+                    </p>
+                    <div class="watch-link">
+                        <a class="link" href="">Watch Live</a>
+                        <div class="icon"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="show-banner">
+                    <img src="assets/Banner Image.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header end  -->
+    <main>
+        <section>
+            <div class="container2">
+                <aside>
+                    <ul>
+                        <br>
+                        <li class="item-link item-link1">Upcoming Match</li>
+                        <li class="item-link">All Group</li>
+                        <li class="item-link ">Blog</li>
+                    </ul>
+                </aside>
+                <div class="banner-vs-banner">
+                    <div class="banner-shedule">
+                        <div class="banners-pic">
+                            <div class="banners">
+                                <div class="banner-image1"><img src="assets/germany Flag.png" alt=""></div>
+                                <h1> VS</h1>
+
+                                <div class="banner-image2"><img src="assets/Flag.png" alt=""></div>
+                            </div>
+                            <div class="heading-text">
+                                <h3 class="bold">Germany VS FRance</h3>
+                                <p class="small-l">April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-shedule">
+                        <div class="banners-pic">
+                            <div class="banners">
+                                <div class="banner-image1"><img src="assets/germany Flag.png" alt=""></div>
+                                <h1> VS</h1>
+
+                                <div class="banner-image2"><img src="assets/Flag.png" alt=""></div>
+                            </div>
+                            <div class="heading-text">
+                                <h3 class="bold">Germany VS FRance</h3>
+                                <p class="small-l">April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-shedule">
+                        <div class="banners-pic">
+                            <div class="banners">
+                                <div class="banner-image1"><img src="assets/germany Flag.png" alt=""></div>
+                                <h1> VS</h1>
+
+                                <div class="banner-image2"><img src="assets/Flag.png" alt=""></div>
+                            </div>
+                            <div class="heading-text">
+                                <h3 class="bold">Germany VS FRance</h3>
+                                <p class="small-l">April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-shedule">
+                        <div class="banners-pic">
+                            <div class="banners">
+                                <div class="banner-image1"><img src="assets/germany Flag.png" alt=""></div>
+                                <h1> VS</h1>
+
+                                <div class="banner-image2"><img src="assets/Flag.png" alt=""></div>
+                            </div>
+                            <div class="heading-text">
+                                <h3 class="bold">Germany VS FRance</h3>
+                                <p class="small-l">April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-shedule">
+                        <div class="banners-pic">
+                            <div class="banners">
+                                <div class="banner-image1"><img src="assets/germany Flag.png" alt=""></div>
+                                <h1> VS</h1>
+
+                                <div class="banner-image2"><img src="assets/Flag.png" alt=""></div>
+                            </div>
+                            <div class="heading-text">
+                                <h3 class="bold">Germany VS FRance</h3>
+                                <p class="small-l">April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-shedule">
+                        <div class="banners-pic">
+                            <div class="banners">
+                                <div class="banner-image1"><img src="assets/germany Flag.png" alt=""></div>
+                                <h1> VS</h1>
+
+                                <div class="banner-image2"><img src="assets/Flag.png" alt=""></div>
+                            </div>
+                            <div class="heading-text">
+                                <h3 class="bold">Germany VS FRance</h3>
+                                <p class="small-l">April 01, 2023, 1.00 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer>
+    <div class="inner-footer">
+        <h3>Goal</h3>
+        <input></input>
+        <div class="social-links">
+
+            <ul>
+
+                <li class="social-items"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="social-items"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="social-items"><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li class="social-items"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="contact-and-service">
+            <ul>
+                <li class="services"><a href="#">Contact Us</a></li>
+                <li class="services"><a href="#">Terms Of Service</a></li>
+                <li class="services"><a href="#">Privacy Policy</a></li>
+                <li class="services"><a href="#">Privacy Setting</a></li>
+                <li class="services"><a href="#">Goal App</a></li>
+                <li class="services"><a href="#">Goal Live</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>
