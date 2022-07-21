@@ -314,13 +314,22 @@ input {
 
 /* tab view  */
 @media only screen and (min-width:689px) and (max-width:992px) {
+
+
     .container2 {
         flex-direction: column;
 
+
+
+    }
+
+    .show-details {
+        width: 100%;
     }
 
     .blog2 {
         grid-template-columns: repeat(2, 1fr);
+
 
     }
 
@@ -364,4 +373,10 @@ input {
 
 
     }
+
+    .inner-footer {
+        width: 100%;
+    }
+
+
 }
